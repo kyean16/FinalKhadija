@@ -1,2 +1,7 @@
-<h1>CookBook#cheap</h1>
-<p>Find me in app/views/cook_book/cheap.html.erb</p>
+<h1>Welcome to our Cheap recipes </h1>
+
+<% @cheapRecipes.each do |f| %>
+	<p><strong><%= f.title %> by chef: <%= Chef.find_by_id(f.chef_id).name %></strong></p>
+	<p>Ingredients: <%= f.ingredients.html_safe %> </p>
+	<p>Directions: <%= f.directions %></p>
+<% end %>

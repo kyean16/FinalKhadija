@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   get 'cook_book/difficult'
 
   get 'cook_book/cheap'
+  get 'easy' => 'cook_book#easy'
+  get 'cheap' => 'cook_book#cheap'
+  get 'difficult' => 'cook_book#difficult'
+  get 'rachel' => 'cook_book#rachel'
+  get 'sandra' => 'cook_book#sandra'
+  get 'paula' => 'cook_book#paula'
 
   root 'cook_book#index'
 

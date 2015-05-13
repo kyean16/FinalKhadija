@@ -1,6 +1,6 @@
-<h1>Welcome to our difficult recipes </h1>
+<h1>Recipes by Sandra </h1>
 
-<% @difficultRecipes.each do |f| %>
+<% @recipes.each do |f| %>
 	<p><strong><%= f.title %> by chef: <%= Chef.find_by_id(f.chef_id).name %></strong></p>
 	<p>Ingredients: <%= f.ingredients.html_safe %> </p>
 	<p>Directions: <%= f.directions %></p>
