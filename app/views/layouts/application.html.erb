@@ -17,7 +17,22 @@
 			 </ul>
 	</div>
 
-	<footer class="footer" style = "position:fixed;bottom:0; width:100%; background-color:pink">
+	<div class="col-md-3">
+		<div id="chefs">
+			<ul>
+				<li>New Features! You can now search by Chef! </li>
+				<li> <%= link_to "Chef Rachel's Recipes", rachel_path %></li>
+				<li> <%= link_to "Chef Sandra's Recipes", sandra_path %> </li>
+				<li> <%= link_to "Chef Paula's Recipes", paula_path %> </li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="col-md-9">
+	     <%= yield %>
+	</div>
+
+		<footer class="footer" style = "position:fixed;bottom:0; width:100%; background-color:pink">
 	   <small>
 	   <a>Contact</a>
 	   </small>
@@ -27,22 +42,6 @@
 	     </ul>
 	   </nav>
 	</footer>
-
-	<div class = "container">
-	<br>
-
-	<div class="col-md-2">
-		<div id="chefs">
-			<li>New Features! You can now search by Chef! </li>
-			<li> <%= link_to "Chef Rachel's Recipes", rachel_path %></li>
-			<li> <%= link_to "Chef Sandra's Recipes", sandra_path %> </li>
-			<li> <%= link_to "Chef Paula's Recipes", paula_path %> </li>
-		</div>
-	</div>
-
-	<div class="col-md-10">
-	     <%= yield %>
-	</div>
 
 	<br><br><br><br>
 	</body>

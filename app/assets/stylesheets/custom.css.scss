@@ -42,20 +42,30 @@ td{
 
 #lister{
 	 text-align:center;
-	 background-color: pink
+	 background-color: pink;
+
 }
 
 #lister ul li{
-text-align:center;
-display: inline;
-padding-right:4em;
+	text-align:center;
+	display: inline;
+	padding-right:4em;
 }
 
 #chefs{
-	background-color:pink;
+	text-align:center;
 }
 
 #chefs ul{
 	list-style-type: none;
-	padding-bottom: 2em;
+
+}
+
+#chefs li{
+	background-color:pink;
+	border-width:0.2em;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-color:black;
+
 }
