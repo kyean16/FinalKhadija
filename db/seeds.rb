@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Chef.delete_all
+Chef.create(name: "Rachel", stars: 5)
+Chef.create(name: "Sandra", stars: 4)
+Chef.create(name: "Paula", stars: 3)
