@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'cook_book/index'
+
+  get 'cook_book/easy'
+
+  get 'cook_book/difficult'
+
+  get 'cook_book/cheap'
+
+  root 'cook_book#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
